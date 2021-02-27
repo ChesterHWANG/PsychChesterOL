@@ -246,7 +246,7 @@ var page_7_options = ["Forte opposition","Opposition","Opposition partielle","Ne
     
     timeline.push(survey_page10);
 
-    var page_11_options_1 = ["Très petite","Petite","Un peu petite","Je n’ai rien d’idée","Un peu grande","Grande","Très grande"];
+    var page_11_options_1 = ["Très faible","Faible","Un peu faible","Je n’ai rien d’idée","Un peu fort","Fort","Très fort"];
 
     var page_11_options_2 = ["Très inutile","Inutile","Un peu inutile","Je n’ai rien d’idée","Un peu utile","Utile","Très utile"];
 
@@ -269,7 +269,7 @@ var page_7_options = ["Forte opposition","Opposition","Opposition partielle","Ne
       var survey_page12 = {
     type: 'survey-likert',
     questions: [
-      {prompt: "En comparant avec les hommes, combien de réputation ont les femmes dans notre société ?", name: 'PSS1', labels: page_11_options_1, required: true},
+      {prompt: "En comparant avec les hommes, combien de dégré d'influence ont les femmes dans notre société ?", name: 'PSS1', labels: page_11_options_1, required: true},
       {prompt: "En comparant avec les hommes, dans quelle mesure les femmes réussissent-elles financièrement dans notre société ?", name: 'PSS2', labels: page_11_options_1, required: true},
       {prompt: "En comparant avec les hommes, quel est le niveau d'éducation des femmes dans notre société ?", name: 'PSS3', labels: page_12_options, required: true}
        ],
@@ -361,8 +361,6 @@ var page_7_options = ["Forte opposition","Opposition","Opposition partielle","Ne
     jsPsych.data.get().localSave("csv", "data.csv");
   }
 });
-
-
 
   </script>
 </html>
